@@ -13,6 +13,7 @@ public class Mains{
     int ship3=1;
 
     Scanner scanner=new Scanner(System.in);
+    Random random=new random(System.in);
     while(ship1==0&&ship2==0&&ship3==0){
     System.out.println("[ターン"+ta+"]");
     if(ship1==1){
@@ -34,6 +35,15 @@ public class Mains{
     int x=scanner.nextInt();
     System.out.println("爆弾のy座標を入力してください(1-5)");
     int y=scanner.nextInt();
+    if(ship1.count==0){
+        ship1=0;
+    }
+    if(ship2.count==0){
+        ship2=0;
+    }
+    if(ship3.count==0){
+        ship1=0;
+    }
 }
 }
 }
